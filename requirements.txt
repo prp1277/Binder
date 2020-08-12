@@ -42,7 +42,7 @@ defusedxml==0.6.0
 distlib==0.3.0
 distro==1.5.0
 distro-info==0.0.0
-Django==3.0.6
+Django==3.0.7
 docutils==0.16
 en-core-web-sm==2.2.5
 entrypoints==0.3
