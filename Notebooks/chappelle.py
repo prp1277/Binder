@@ -1,3 +1,5 @@
+# This code is not my own, I have adapted it from
+# https://github.com/adashofdata/nlp-in-python-tutorial
 #%%
 import requests
 from bs4 import BeautifulSoup
@@ -43,12 +45,18 @@ specials = [
     "Sticks_and_Stones:Epilogue",
     "SNL_Monologue",
 ]
-# %%
 transcripts = [url_to_transcript(u) for u in urls]
-# %%
-transcripts
+
 # %%
 for i, c in enumerate(specials):
-    with open("transcripts/Chappelle/" + c + ".txt", "wb") as file:
+    with open("data/transcripts/Chappelle/" + c + ".txt", "wb") as file:
         pickle.dump(transcripts[i], file)
 # %%
+for i in transcripts:
+    transcripts.index(i)
+
+transcripts[:]
+
+# %%
+chappelle_df = pd.DataFrame(transcripts)
+chappelle_df
