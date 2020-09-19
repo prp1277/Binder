@@ -18,11 +18,6 @@ df_string
 pd.DataFrame.describe(chappelle_df)
 
 # %%
-csv_data = pd.DataFrame.to_csv(
-    "chappelle_specials.csv", sep=",", encoding="utf-8", header="true"
-)
-csv_data
-# %%
 pd.DataFrame.to_csv(
     chappelle_df,
     path_or_buf="chappelle_data.csv",
@@ -33,4 +28,4 @@ pd.DataFrame.to_csv(
 )
 
 # %%
-chappelle_df[1:10]
+chappelle_df[0:110]
