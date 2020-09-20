@@ -1,0 +1,5 @@
+GET https://reddit.com/r/excel/.json
+###
+curl --request GET \
+  --url https://reddit.com/r/excel/.json \
+  --header 'user-agent: vscode-restclient'
